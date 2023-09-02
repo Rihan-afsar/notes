@@ -1,0 +1,19 @@
+#grep
+
+Grep is a useful command to search for matching patterns in a file.
+grep is short for "global regular expression print".
+
+-->we will discuss the following options that can be used with grep:
+
+-i, --ignore-case: Ignores case distinctions in patterns and input data.
+-v, --invert-match: Selects the non-matching lines of the provided input pattern.
+-n, --line-number: Prefix each line of the matching output with the line number in the input file.
+-w: Find the exact matching word from the input file or string.
+-c: Count the number of occurrences of the provided pattern.
+
+--> Scan Files for Matching Input :
+ 
+-l, --files-with-matches: Prints the file name that contains the provided matching pattern.
+-L, --files-without-match: Prints the file name that does not contain the provided matching pattern.
+
+grep [-option] "{string}" file_name
