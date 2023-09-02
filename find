@@ -53,3 +53,22 @@ find /path/ -size +1M -size -50MB
 
 Case 14 - How to search 15 days old files?
 find /path/ -mtime 15 
+
+Case 15 - How to search more than 15 dyas but less than 50 days.
+find /path/ -mtime +15 -mtime -50
+
+Case 16 - how to search file last 1 houre
+find /path/ -cmin -60
+
+Case 17 - How to search last few mintus (1 h) modify file 
+find /path/ -mmin -60 
+find /path/ -mmin -10 {last 10 Min modify }
+
+Case 18 - how to search 15 day old access time file.
+find /path/ -atime 15 
+
+Case 19 - last 10 mint acess file 
+find /path/ -amin -10
+
+Case 20 - How to search for user
+find /home/ -user rihan2 -iname "*.txt"
