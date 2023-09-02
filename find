@@ -1,0 +1,55 @@
+#find command
+find {options] [path...] [expression]
+find /path/ -name <file_name>
+
+case 1-How to search a file based on their size ?
+find /path/ -size 50M
+M for MB
+k for KB
+G for GB
+c for bytes 
+
+Case 2 - How to find onlyy directory in a given path ?
+find /path/ -type f 
+f for file
+d for directory
+l for sybolic link
+b for block device
+s for socket
+
+Case 3 - how to search a file based on it's name?
+find /path/ -name <file_name>
+
+Case 4 - How to ignore upper and lower case in file name while searching files?
+find /path/ -iname <file_name>
+
+case 5- How to search files for a given user only?
+find /path/ -user root
+
+Case 6 - How to serach a file based on the inode no.?
+find /path/ -inum <inode_no_of file>
+
+Case 7 - How to search a file basedon the no. of links?
+find /path/ -links <no_of links>
+
+Case 8 - How to search a file based on their permission
+find /path/ -perm /u=regular
+find /path/ -perm 777
+
+Case 9 - How to serach all the files which start with letter a?
+find /path/ -iname a*
+
+Case 10 - How to search all the file which are modoife/created after last.txt file?
+find /path/ -newer <file_name>
+
+Case 11 - How to search all the empty files in a given directory?
+find /path/ -empty
+
+Case 12 - How to Search all the empty files in a given directory and at the same delete them?
+find /path/ -empty -exec rm {} \; 
+
+Case 13 - How to search all the files whose sizeare between 1-50MB?
+find /path/ -size +1M -size -50MB
+
+Case 14 - How to search 15 days old files?
+find /path/ -mtime 15 
