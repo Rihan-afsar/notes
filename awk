@@ -11,26 +11,20 @@ awk '{action}' your_file_name.txt
 awk '{print $0}' file_name
 
 -> If you would like each line to have a line-number count, you would use the NR built-in variable:
-
 awk '{print NR,$0}' file_name 
 
--> When using awk, you can specify certain columns you want printed.
-
-To have the first column printed, you use the command:
-
+-> When using awk, you can specify certain columns you want printed.To have the first column printed, you use the command:
 awk '{print $1}' information.txt
 
 ->To print more than one column, for example the first and forth columns, you would do:
-
 awk '{print $1, $4}' information.txt
 
 ->> To print the last field (the last column), you can also use $NF which represents the last field in a record:
-
 awk '{print $NF}' information.txt 
 
 -->You can print a line that starts with a specific letter.
-
 awk '/^r/' information.txt
+
 #awk------------------------------------------------
 
 #How to see column 2 or 3?
